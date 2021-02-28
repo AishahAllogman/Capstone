@@ -72,15 +72,15 @@ The API will return three error types when requests fail:
 
 •	Sample Request: https://git.heroku.com/capstone-aisha.git/moives
      Request Body  
-     ```
+```
      {
     "id": 1,
     "title": "miracles from Heaven",
     "release_data":"23April2021 "
      }
-     ```
+```
 •   Sample Response
- ```
+```
 {
     "movie": [
         {
@@ -91,7 +91,7 @@ The API will return three error types when requests fail:
     ],
     "success": true
 }
- ```
+```
 **Post/Actors** 
 •	General:
  Creates a new Actors using the submitted json parameter ( id, name,age, and gender)
@@ -99,15 +99,16 @@ The API will return three error types when requests fail:
   requires post:actors permission
 •	Sample: https://git.heroku.com/capstone-aisha.git/actors
     Request Body  
-     ```
+```
      {
     "id": 1,
     "name": "Ali",
     "age": 30,
     "gender":"male"
-}
+      }
+```
 •   Sample Response
-     ```
+```
     "actor": [
         {
             "age": 30,
@@ -126,12 +127,12 @@ The API will return three error types when requests fail:
 
 •	Sample Request: https://git.heroku.com/capstone-aisha.git/moives/1
      Request Body  
-     ``` 
+``` 
      {
     "title":"Aishamoives",
     "release_data":"3june2009"
     }
-     ```
+```
 
 •   Sample Response
 ```
@@ -153,16 +154,15 @@ The API will return three error types when requests fail:
   requires post:actors permission
 •	Sample: https://git.heroku.com/capstone-aisha.git/actors/1
     Request Body  
-     ```
+ ```
 {
     "name":"sweet",
     "gender":"f"
 }
-
-     ```
-•   
+```
+  
 •   Sample Response
-    ```
+```
 {
     "actor": [
         {
@@ -174,7 +174,7 @@ The API will return three error types when requests fail:
     ],
     "success": true
 }
-     ```
+ ```
 **Delete /Movies**
 •	General:
 	Deletes the Movies of the given  ID if it exists. Returns the json object ( id of the deleted movie, success value)
@@ -182,12 +182,12 @@ The API will return three error types when requests fail:
 
 •	Sample Request: https://git.heroku.com/capstone-aisha.git/moives/1 
 •   Sample Response
-   ```
+```
 {
     "detele": 3,
     "success": true
 }
- ```
+```
 
 **Delete/Actors** 
 •	General:
@@ -202,7 +202,7 @@ The API will return three error types when requests fail:
 }
  ```
 ## if you want to working with application locally 
- [locall]()
+ [locally](localapp.md)
 ## Testing
 To run the tests, run
 ```
