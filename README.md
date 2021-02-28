@@ -202,7 +202,7 @@ The API will return three error types when requests fail:
 }
  ```
 ## if you want to working with application locally 
- [locall]()
+ [locally](localapp.md)
 ## Testing
 To run the tests, run
 ```
