@@ -1,8 +1,8 @@
 ## if you want to working with application locally 
 #Installing Dependencies
-**1. Python 3.7**
+1. Python 3.7
     Follow instructions to install the latest version of python for your platform in the python docs
-**2.Virtual Enviornment**
+2.Virtual Enviornment
     We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organaized.         Instructions for setting up a virual enviornment for your platform can be found in the python docs
 **3. install all requirements**
     ```
