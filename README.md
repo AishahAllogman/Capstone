@@ -17,7 +17,7 @@ Add or delete an actor from the database,Modify actors or movies
 ## Backend
 this application has just backend for now 
 ### Getting Started
-API endpoints can be accessed via (https://git.heroku.com/capstone-aisha.git)
+API endpoints can be accessed via (https://capstone-aisha.herokuapp.com)
 
 Auth0 information for endpoints that require authentication can be found in **setup.sh**
 ## Api Tasks
@@ -44,7 +44,7 @@ The API will return three error types when requests fail:
 	Returns a list of Moive  objects, success value
   requires get:movies permission
 
-•	Sample Request: https://git.heroku.com/capstone-aisha.git/movies 
+•	Sample Request: https://capstone-aisha.herokuapp.com/movies 
 •   Sample Response
 ```
 {
@@ -56,7 +56,7 @@ The API will return three error types when requests fail:
 •	General:
   Returns a list of Actors   objects, success value
   requires get:actors permission
-•	Sample: https://git.heroku.com/capstone-aisha.git/actors 
+•	Sample: https://capstone-aisha.herokuapp.com/actors 
 •   Sample Response
 ```
 {
@@ -70,7 +70,7 @@ The API will return three error types when requests fail:
   Returns the json object ( id, name,relasedate)
   requires post:movies permission
 
-•	Sample Request: https://git.heroku.com/capstone-aisha.git/moives
+•	Sample Request: https://capstone-aisha.herokuapp.com/moives
      Request Body  
 ```
      {
@@ -97,7 +97,7 @@ The API will return three error types when requests fail:
  Creates a new Actors using the submitted json parameter ( id, name,age, and gender)
  Returns the json object ( success value,id, name,age, and gender)
   requires post:actors permission
-•	Sample: https://git.heroku.com/capstone-aisha.git/actors
+•	Sample: https://capstone-aisha.herokuapp.com/actors
     Request Body  
 ```
      {
@@ -125,7 +125,7 @@ The API will return three error types when requests fail:
   Returns the json object ( id, name,relasedate)
   requires patch:movies permission
 
-•	Sample Request: https://git.heroku.com/capstone-aisha.git/moives/1
+•	Sample Request: https://capstone-aisha.herokuapp.com/moives/1
      Request Body  
 ``` 
      {
@@ -152,7 +152,7 @@ The API will return three error types when requests fail:
  Edit  the actor   given  ID if it existsusing the submitted json parameter (  name,age,gender)
   Returns the json object ( id, name,age,gender)
   requires post:actors permission
-•	Sample: https://git.heroku.com/capstone-aisha.git/actors/1
+•	Sample: https://capstone-aisha.herokuapp.com/actors/1
     Request Body  
  ```
 {
@@ -180,7 +180,7 @@ The API will return three error types when requests fail:
 	Deletes the Movies of the given  ID if it exists. Returns the json object ( id of the deleted movie, success value)
   requires delete:movies permission
 
-•	Sample Request: https://git.heroku.com/capstone-aisha.git/moives/1 
+•	Sample Request: https://capstone-aisha.herokuapp.com/movies/1 
 •   Sample Response
 ```
 {
@@ -193,7 +193,7 @@ The API will return three error types when requests fail:
 •	General:
   Deletes the Actor of the given  ID if it exists. Returns the json object ( id of the deleted actors, success value)
   requires delete:actors permission
-•	Sample: https://git.heroku.com/capstone-aisha.git/actors/1 
+•	Sample: https://capstone-aisha.herokuapp.com/actors/1 
 •   Sample Response
  ```
 {
