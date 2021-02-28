@@ -105,7 +105,8 @@ The API will return three error types when requests fail:
     "name": "Ali",
     "age": 30,
     "gender":"male"
-}
+      }
+    ```
 •   Sample Response
      ```
     "actor": [
@@ -117,7 +118,7 @@ The API will return three error types when requests fail:
         }
     ],
     "success": true  
- ```
+      ```
 **Patch/Movies**
 •	General:
  Edit  the movie   given  ID if it existsusing the submitted json parameter (  name,relasedate)
@@ -153,14 +154,13 @@ The API will return three error types when requests fail:
   requires post:actors permission
 •	Sample: https://git.heroku.com/capstone-aisha.git/actors/1
     Request Body  
-     ```
+ ```
 {
     "name":"sweet",
     "gender":"f"
 }
-
-     ```
-•   
+ ```
+  
 •   Sample Response
     ```
 {
