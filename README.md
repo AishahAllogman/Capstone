@@ -20,6 +20,19 @@ this application has just backend for now
 API endpoints can be accessed via (https://capstone-aisha.herokuapp.com)
 
 Auth0 information for endpoints that require authentication can be found in **setup.sh**
+
+## if you want to working with application locally 
+ [locally](localapp.md)
+
+
+## Project dependencies
+  in this project i try  to show  what i study in fsnd : 
+1- models.py: database and postgres
+2- app.py: API whit flask 
+3- auth.py: Authorization & Authentification
+4-test_app.py: Testing
+5- deplpyment on Heroku 
+
 ## Api Tasks
 
 ### error Endel 
@@ -201,8 +214,7 @@ The API will return three error types when requests fail:
     "success": true
 }
  ```
-## if you want to working with application locally 
- [locally](localapp.md)
+
 ## Testing
 To run the tests, run
 ```
