@@ -5,8 +5,8 @@ from flask_migrate import Migrate
 import json
 
 database_name = "Capstone"
-#database_path = '"postgres://{}:{}@{}/{}".format(
-   # "aisha", "Aisha", "localhost:5432", database_name)'
+# database_path = '"postgres://{}:{}@{}/{}".format(
+# "aisha", "Aisha", "localhost:5432", database_name)'
 database_path = os.environ['DATABASE_URL']
 
 db = SQLAlchemy()
@@ -22,8 +22,6 @@ def setup_db(app, database_path=database_path):
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     db.app = app
     db.init_app(app)
-   # db.create_all()
-   # migrate = Migrate(app, db)
 # Movies Class:
 
 
@@ -32,7 +30,6 @@ class Movie(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(120))
     release_data = db.Column(db.DateTime())
-    #Actorinmoive = db.relationship('Actorinmoive', backref='Moive', lazy=True)
 
     def __init__(self, id, title, release_data):
         self.id = id
@@ -67,7 +64,6 @@ class Actor(db.Model):
     name = db.Column(db.String(120))
     age = db.Column(db.Integer)
     gender = db.Column(db.String(10))
-    #Actorinmoive = db.relationship('Actorinmoive', backref='Actor', lazy=True)
 
     def __init__(self, id, name, age, gender):
         self.id = id

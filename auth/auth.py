@@ -25,7 +25,7 @@ class AuthError(Exception):
 # Auth Header
 
 def get_token_auth_header():
-    #raise Exception('Not Implemented')
+    # raise Exception('Not Implemented')
     auth = request.headers.get('Authorization', None)
     if not auth:
         raise AuthError({
@@ -56,7 +56,6 @@ def get_token_auth_header():
     return token
 
 
-
 def check_permissions(permission, payload):
     if 'permissions' not in payload:
         raise AuthError({
@@ -73,7 +72,7 @@ def check_permissions(permission, payload):
 
 
 def verify_decode_jwt(token):
-    #raise Exception('Not Implemented')
+    # raise Exception('Not Implemented')
     jsonurl = urlopen(f'https://{AUTH0_DOMAIN}/.well-known/jwks.json')
     jwks = json.loads(jsonurl.read())
     unverified_header = jwt.get_unverified_header(token)
@@ -114,7 +113,7 @@ def verify_decode_jwt(token):
         except jwt.JWTClaimsError:
             raise AuthError({
                 'code': 'invalid_claims',
-                'description': 'Incorrect claims. Please, check the audience and issuer.'
+                'description': 'IncorrectclaimsPlease,checkthe audience&issuer'
             }, 401)
         except Exception:
             raise AuthError({
