@@ -8,8 +8,11 @@ from models import setup_db, Movie, Actor
 from auth.auth import AuthError, requires_auth
 
 headers = {'Authorization': "Bearer {}".os.environ['ExecutiveProducer_token']}
+
+
 class CapstoneTestCase(unittest.TestCase):
     """This class represents the Capstone test case"""
+
     def setUp(self):
         """Define test variables and initialize app."""
         self.app = create_app()
